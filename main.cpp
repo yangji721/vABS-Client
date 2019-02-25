@@ -3,10 +3,10 @@
 #include "logindialog.h"
 #include <QDesktopWidget>
 #include <QProcess>
-#include <QSql>
-#include <QSqlDatabase>
-#include <QSqlQuery>
-#include <QSqlError>
+//#include <QSql>
+//#include <QSqlDatabase>
+//#include <QSqlQuery>
+//#include <QSqlError>
 #include <QDebug>
 
 
@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     gstrFilePath = QCoreApplication::applicationFilePath();
 
+    /*
     QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
     database.setDatabaseName("login.db");
     if(database.open())
@@ -28,6 +29,7 @@ int main(int argc, char *argv[])
 
         sql_query.prepare(create_sql);
     }
+    */
 
     //MainWindow w;
     LoginDialog dlg;
